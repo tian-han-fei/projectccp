@@ -37,8 +37,8 @@ label{
     font-size: 20px;
 }
 
-button{
-    font-size: 20px;
+input[type=submit]{
+    height: 30px;
 }
 
 signup{
