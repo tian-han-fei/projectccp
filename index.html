@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <script>
       function setAction(form) {
-        form.action
+        form.action = "dashboard.html";
+        alert(form.action);
+        return false;
       }
     </script>
   </head>
@@ -27,7 +29,7 @@
 
     <main>
       
-      <form action="" method="POST" id="form">
+      <form action="return setAction(this)" method="POST" id="form">
 
         <label for="email">Email: </label>
         <input type="email" id="email" required>
