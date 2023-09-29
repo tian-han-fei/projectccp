@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <style type="text/css">
     .pfp {display:inline-block;}
     .username {display:inline-block;}
@@ -7,11 +8,13 @@
       list-style-type: none
     }
   </style>
+
   <head>
     <title>EventSync – Dashboard</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
     <header>
       <h1>Event<font color="light blue">Sync</font></h1>
       <center>
@@ -21,6 +24,7 @@
       <center>
       <hr>
     </header>
+
     <main>
       <div class="pfp">
         <img src="https://i.kym-cdn.com/editorials/icons/original/000/005/826/turbulence_explainer.jpg" alt="whole lotta turbulence" height="200">
@@ -29,17 +33,44 @@
         <h1>Alan Weng</h1>
         <h2>@wenga25 – Alan Weng</h2>
       </div>
+
+      <div align="center" id="create">
+        <button style="font-size:25px; 
+        background-color: blue; 
+        color: lightblue; 
+        border-radius: 25px;" onClick="stuff()">Create Event</button>
+      </div>
+
+      <p id = "test">
+        
+      </p>
+     
+      <script>
+
+        function stuff() {
+          const x = document.createElement("button");
+          x.textContent("EVENT");
+          document.body.append(x);
+        }
+        
+      </script>
+
+
       <nav>
         <ul>
-          <li><a href="#">My friends</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Account</a></li>
+          <li><a href="#">My Friends</a></li>
+          <li><a href="#">Edit Profile</a></li>
         </ul>
       </nav>
+
+      
+
+
     </main>
+
     <footer>
       <hr>
-      <h3>Created by Troy Tian</h3>
+      <h3>Created by Alan & Troy</h3>
 
     </footer>
   </body>
