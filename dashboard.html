@@ -40,17 +40,13 @@
         color: lightblue; 
         border-radius: 25px;" onClick="stuff()">Create Event</button>
       </div>
-
-      <p id = "test">
-        
-      </p>
      
       <script>
 
         function stuff() {
-          const x = document.createElement("button");
-          x.textContent("EVENT");
-          document.body.append(x);
+          const fs = require('fs')
+          let fInput = "bru"
+          fs.writeFile('index.txt', fInput)
         }
         
       </script>
