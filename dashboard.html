@@ -46,8 +46,12 @@
         function stuff() {
           const fs = require('fs')
           let fInput = "bru"
-          fs.writeFile('index.txt', fInput)
-          alert("eewerews")
+          fs.writeFile('index.txt', fInput, (err) => {
+            if (err) throw err;
+            else {
+              alert("eewerews")
+            }
+          })
         }
         
       </script>
